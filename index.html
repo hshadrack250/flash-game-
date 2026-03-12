@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky Slot Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell" aria-label="Lucky Slot Machine">
+    <h1 class="title">Lucky Slot</h1>
+
+    <section class="status-panel" aria-live="polite">
+      <p class="coins-display">Coins: <span id="coinCount">100</span></p>
+      <p id="resultMessage" class="result-message">Press SPIN to play</p>
+    </section>
+
+    <section class="slot-frame">
+      <canvas id="slotCanvas" width="480" height="480" role="img" aria-label="3 by 3 slot reels"></canvas>
+      <div id="winGlow" class="win-glow" aria-hidden="true"></div>
+    </section>
+
+    <button id="spinButton" class="spin-button" type="button">SPIN</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
